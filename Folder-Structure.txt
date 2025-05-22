@@ -1,0 +1,13 @@
+user-service/
+├── app/
+│   ├── main.py               # FastAPI app entry point
+│   ├── models/user.py        # Pydantic models
+│   ├── db/mongo.py           # MongoDB connection logic
+│   ├── routes/auth.py        # /register, /login
+│   ├── routes/profile.py     # /profile (JWT-protected)
+│   ├── utils/auth.py         # JWT utils and password hashing
+│   └── config.py             # Loads env vars
+├── requirements.txt
+├── Dockerfile
+├── .env
+└── docker-compose.yml
